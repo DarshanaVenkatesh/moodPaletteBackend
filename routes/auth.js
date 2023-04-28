@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt"); // used to encrypt password
 
 // REGISTER
 router.post("/register", async (req,res)=>{ 
-  
+  //this is a small change to test commit
     try{
         // generating new password (encrypted)
         const salt = await bcrypt.genSalt(10);
