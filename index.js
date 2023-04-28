@@ -33,8 +33,8 @@ const cors = require('cors')
 app.use(cors(corsOptions));*/
 
 //middleware
-//app.use(express.json());
-app.use(express.static());
+app.use(express.json());
+//app.use(express.static());
 app.use(helmet());
 app.use(morgan("common"));
 
